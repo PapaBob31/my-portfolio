@@ -1,3 +1,14 @@
+import {useEffect} from "react"
+
+function showStuff(entries) {
+  entries.forEach(entry => {
+    console.log(90)
+    if (entry.isIntersecting) {
+      entry.target.classList.remove("hide-stuff")
+      entry.target.classList.add("show-stuff")
+    }
+  })
+}
 
 function Header() {
   return (
@@ -46,13 +57,30 @@ function Footer() {
 }
 
 function Projects() {
+  useEffect(() => {
+    
+    const elements = document.querySelectorAll(".hide-stuff")
+    const observer = new IntersectionObserver(showStuff, {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.2,
+    })
+
+    for (let i=0; i<elements.length; i++) {
+      observer.observe(elements[i])
+    }
+
+    return ()=>{}
+
+  }, [])
+
   const projects_details = [
     {
       title: "2048 Game",
       description: "Recreation of the 2048 game built with react and typescript",
       git_link: "",
       live_site: "https://2o48-game.netlify.app/",
-      img_link: "",
+      img_link: "./public/images/2048.png",
       tools: ["React", "Typescript", "HTML", "CSS", "JS"]
     },
     {
@@ -82,7 +110,7 @@ function Projects() {
   ]
 
   return projects_details.map((detail, index) => (
-    <figure className={"w-full relative my-12 flex " + (index%2 === 1 ? "justify-end": "")} key={index}>
+    <figure className={"w-full relative my-12 flex hide-stuff " + (index%2 === 1 ? "justify-end": "")} key={index}>
       <div className="relative w-3/5">
         <img src={detail.img_link} className="w-full"/>
         <div className="bg-zinc-900 opacity-60 absolute w-full h-full top-0 left-0 transition-opacity duration-300 hover:opacity-0"></div>
@@ -90,6 +118,11 @@ function Projects() {
       <figcaption className={"absolute top-0 w-1/2 h-full p-3 " + (index%2 === 1 ? "left-0" : "right-0")}>
         <h2 className={"text-3xl my-6" + (!(index%2 === 1) ? " text-end": "")}>{detail.title}</h2>
         <p className="p-5 rounded-lg bg-zinc-800 mb-6">{detail.description}</p>
+        <ul className="flex justify-end" aria-label="Tools used">
+          {detail.tools.map((tool, index) => (
+            <li className="mr-4" key={index}>{tool}</li>
+          ))}
+        </ul>
         <div className={"flex" + (!(index%2 === 1) ? " justify-end": "")}>
           <a href={detail.git_link} aria-label className="inline-block w-6">
             <img src="./public/icons/github.svg" alt="github icon"/>
@@ -101,11 +134,26 @@ function Projects() {
       </figcaption>
     </figure>
   ))
-
 }
 
-
 function OtherProjects() {
+  useEffect(() => {
+    
+    const elements = document.querySelectorAll(".hide-stuff")
+    const observer = new IntersectionObserver(showStuff, {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.2,
+    })
+
+    for (let i=0; i<elements.length; i++) {
+      observer.observe(elements[i])
+    }
+
+    return ()=>{}
+
+  }, [])
+
   const details = [
     {
       title: "Bob's Bakery",
@@ -138,7 +186,7 @@ function OtherProjects() {
   ]
 
   return details.map((detail, index) => (
-    <article className="bg-zinc-800 p-6 w-[45%] mr-6 mb-6" key={index}>
+    <article className="bg-zinc-800 p-6 w-[45%] mr-4 mb-4 hide-stuff" key={index}>
       <div className="flex align-middle justify-between">
         <img src="./public/icons/folder.svg" alt="folder icon" className="w-10"/>
         <div>
@@ -163,21 +211,37 @@ function OtherProjects() {
 
 
 export default function Main() {
+  useEffect(() => {
+    
+    const elements = document.querySelectorAll(".hide-stuff")
+    const observer = new IntersectionObserver(showStuff, {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.2,
+    })
+
+    for (let i=0; i<elements.length; i++) {
+      observer.observe(elements[i])
+    }
+
+    return ()=>{}
+
+  }, [])
   return (
     <>
       <Header/>
       <main className="w-3/4 mx-auto">
         <section className="w-1/2">
-          <p className="my-6">Hi, my name is</p>
-          <h1 className="text-6xl font-bold my-6">Adedamola Egbebi</h1>
-          <h2 className="text-5xl font-bold my-6">Front End Web Developer</h2>
-          <p className="my-6">
+          <p className="my-6 hide-stuff">Hi, my name is</p>
+          <h1 className="text-6xl font-bold my-6 hide-stuff">Adedamola Egbebi</h1>
+          <h2 className="text-5xl font-bold my-6 hide-stuff delay-100">Front End Web Developer</h2>
+          <p className="my-6 hide-stuff delay-200">
             I specialize in building modern, intuitive, accessible, scalable and user friendly websites.
             I have hands on experience using web technologies like React, typescript, vanilla javascript, tailwindcss to name a few.
             I'm also very familiar with the python programming language.
           </p>
-          <p className="my-2">Here are a few technologies I’m quite familiar with:</p>
-          <ul className="flex flex-wrap w-1/2 justify-between">
+          <p className="my-2 hide-stuff">Here are a few technologies I’m quite familiar with:</p>
+          <ul className="flex flex-wrap w-1/2 justify-between hide-stuff">
             <li className="w-1/2">JavaScript (ES6+)</li>
             <li className="w-1/2">TypeScript</li>
             <li className="w-1/2">React</li>
@@ -185,7 +249,7 @@ export default function Main() {
             <li className="w-1/2">Sass</li>
             <li className="w-1/2">Python</li>
           </ul>
-          <button>Here's my Resume</button>
+          <button className="hide-stuff">>Here's my Resume</button>
         </section>
         <section>
          <Projects/>
