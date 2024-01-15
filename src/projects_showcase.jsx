@@ -41,20 +41,20 @@ export function Projects() {
   ]
 
   return projects_details.map((detail, index) => (
-    <figure className={"w-full relative my-12 flex hide-stuff " + (index%2 === 1 ? "justify-end": "")} key={index}>
-      <div className="relative w-3/5">
-        <img src={detail.img_link} className="w-full"/>
-        <div className="bg-zinc-900 opacity-60 absolute w-full h-full top-0 left-0 transition-opacity duration-300 hover:opacity-0"></div>
+    <figure className={"w-full relative my-12 md:flex hide-stuff min-h-72 " + (index%2 === 1 ? "justify-end": "")} key={index}>
+      <div className="relative md:w-3/5 w-full">
+        <img src={detail.img_link} className="w-full h-full"/>
+        <div className="bg-zinc-900 opacity-80 md:opacity-70 absolute w-full h-full top-0 left-0 transition-opacity duration-300 md:hover:opacity-0"></div>
       </div>
-      <figcaption className={"absolute top-0 w-1/2 h-full p-3 " + (index%2 === 1 ? "left-0" : "right-0")}>
-        <h2 className={"text-3xl my-6" + (!(index%2 === 1) ? " text-end": "")}>{detail.title}</h2>
-        <p className="p-5 rounded-lg bg-zinc-800 mb-6">{detail.description}</p>
-        <ul className={"flex" + (!(index%2 === 1) ? " justify-end": "")} aria-label="Tools used">
+      <figcaption className={"absolute w-full top-0 md:w-1/2 h-full p-3 " + (index%2 === 1 ? "md:left-0" : "md:right-0")}>
+        <h2 className={"text-3xl my-6" + (!(index%2 === 1) ? " md:text-end": "")}>{detail.title}</h2>
+        <p className="md:p-5 rounded-lg md:bg-zinc-800 mb-6 bg-transparent">{detail.description}</p>
+        <ul className={"flex" + (!(index%2 === 1) ? " md:justify-end": "")} aria-label="Tools used">
           {detail.tools.map((tool, index) => (
             <li className="mr-4" key={index}>{tool}</li>
           ))}
         </ul>
-        <div className={"flex" + (!(index%2 === 1) ? " justify-end": "")}>
+        <div className={"flex mt-4" + (!(index%2 === 1) ? " md:justify-end": "")}>
           <a href={detail.git_link} aria-label className="inline-block w-6">
             <img src="./public/icons/github.svg" alt="github icon"/>
           </a>
@@ -102,7 +102,7 @@ export function OtherProjects() {
   ]
 
   return details.map((detail, index) => (
-    <article className="bg-zinc-800 p-6 w-[45%] mr-4 mb-4 hide-stuff" key={index}>
+    <article className="bg-zinc-800 p-6 md:w-[45%] md:mr-4 mb-4 hide-stuff" key={index}>
       <div className="flex align-middle justify-between">
         <img src="./public/icons/folder.svg" alt="folder icon" className="w-10"/>
         <div>
