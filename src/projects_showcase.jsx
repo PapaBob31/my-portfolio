@@ -41,9 +41,10 @@ export function Projects() {
   ]
 
   return projects_details.map((detail, index) => (
-    <figure className={"w-full relative my-12 md:flex hide-stuff min-h-72 " + (index%2 === 1 ? "justify-end": "")} key={index}>
-      <div className="relative md:w-3/5 w-full">
-        <img src={detail.img_link} className="w-full h-full"/>
+    <figure className={"w-full relative my-12 md:flex hide-stuff min-h-72 border md:border-0 rounded-lg border-neutral-800 shadow-neutral-800 md:shadow-none shadow-lg "
+     + (index%2 === 1 ? "justify-end": "")} key={index}>
+      <div className="absolute md:relative md:w-3/5 w-full h-full">
+        <img src={detail.img_link} className="w-full h-full object-cover md:object-fill rounded-lg md:rounded-none"/>
         <div className="bg-zinc-900 opacity-80 md:opacity-70 absolute w-full h-full top-0 left-0 transition-opacity duration-300 md:hover:opacity-0"></div>
       </div>
       <figcaption className={"absolute w-full top-0 md:w-1/2 h-full p-3 " + (index%2 === 1 ? "md:left-0" : "md:right-0")}>

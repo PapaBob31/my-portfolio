@@ -6,7 +6,7 @@ import hideStuff from "./utilities.jsx"
 
 function Links() {
   return (
-    <ul className="md:w-6 flex md:fixed left-10 bottom-0 md:flex-col justify-between md:h-2/5 px-[5%]">
+    <ul className="w-4/5 md:w-6 flex md:fixed left-10 bottom-0 md:flex-col justify-between items-center md:min-h-60 md:h-2/5 mx-auto">
       <li className="w-5 hover:-translate-y-1">
         <a href="" aria-label="">
           <img src="./public/icons/github.svg" alt="github icon"/>
@@ -41,8 +41,8 @@ export default function Main() {
       <main className="md:w-3/4 mx-[5%] md:mx-auto md:ps-16">
         <section className="md:w-1/2 w-4/5">
           <p className="my-6 hide-stuff">Hi, my name is</p>
-          <h1 className="text-6xl font-bold my-6 hide-stuff">Adedamola Egbebi</h1>
-          <h2 className="text-5xl font-bold my-6 hide-stuff delay-100">Front End Web Developer</h2>
+          <h1 className="text-5xl md:text-6xl font-bold my-6 hide-stuff">Adedamola Egbebi</h1>
+          <h2 className="text-4xl md:text-5xl font-bold my-6 hide-stuff delay-100">Front End Web Developer</h2>
           <p className="my-6 hide-stuff delay-200">
             I specialize in building modern, intuitive, accessible, scalable and user friendly websites.
             I have hands on experience using web technologies like React, typescript, vanilla javascript, tailwindcss to name a few.
