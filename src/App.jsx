@@ -6,25 +6,25 @@ import hideStuff from "./utilities.jsx"
 
 function Links() {
   return (
-    <ul className="w-4/5 md:w-6 flex md:fixed left-10 bottom-0 md:flex-col justify-between items-center md:min-h-60 md:h-2/5 mx-auto" id="contact-me">
+    <ul className="w-4/5 mb-4 md:mb-0 md:w-6 flex md:fixed left-10 bottom-0 md:flex-col justify-between items-center md:min-h-60 md:h-2/5 mx-auto" id="contact-me">
       <li className="w-5 hover:-translate-y-1">
         <a href="" aria-label="Github Profile link">
-          <img src="./public/icons/github.svg" alt="github icon"/>
+          <img src="./icons/github.svg" alt="github icon"/>
         </a>
       </li>
       <li className="w-5 hover:-translate-y-1">
         <a href="" aria-label="Gmail Link">
-          <img src="./public/icons/insta.svg" alt="instagram icon"/>
+          <img src="./icons/insta.svg" alt="instagram icon"/>
         </a>
       </li>
       <li className="w-5 hover:-translate-y-1">
         <a href="https://www.twitter.com/PapaBob31" aria-label="Twitter Profile Link">
-          <img src="./public/icons/twitter.svg" alt="twitter icon"/>
+          <img src="./icons/twitter.svg" alt="twitter icon"/>
         </a>
       </li>
       <li className="w-5 hover:-translate-y-1">
         <a href="https://github.com/PapaBob31" aria-label="">
-          <img src="./public/icons/linkedin.svg" alt="linkedin icon"/>
+          <img src="./icons/linkedin.svg" alt="linkedin icon"/>
         </a>
       </li>
       <div className="w-0.5 h-14 bg-white mx-auto hidden md:block"></div>

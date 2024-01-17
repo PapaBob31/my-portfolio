@@ -11,7 +11,9 @@ export default function Header() {
         </button>
         <div className={`md:static fixed top-0 right-0 ${visibilityClass} md:translate-x-0 
           w-[85vw] md:w-full md:bg-inherit bg-zinc-800 duration-500 ease-in-out md:h-fit h-screen p-4 z-10`}>
-          <button className="bg-white text-black p-4 rounded-lg md:hidden" onClick={() => setVisibilityClass("translate-x-full")}>Close</button>
+          <button className="text-black p-4 rounded-lg md:hidden" onClick={() => setVisibilityClass("translate-x-full")}>
+            <img src="icons/close.svg" alt="Menu close icon"/>
+          </button>
           <ul className="block md:flex justify-between">
             <li className="mt-12 md:mt-0"><a href="#about-me">About</a></li>
             <li className="mt-12 md:mt-0"><a href="#experience">Experience</a></li>

@@ -11,7 +11,7 @@ export function Projects() {
       description: "Recreation of the 2048 game built with react and typescript",
       git_link: "https://github.com/PapaBob31/2048-game",
       live_site: "https://2o48-game.netlify.app/",
-      img_link: "./public/images/2048.png",
+      img_link: "./images/2048.png",
       tools: ["React", "Typescript", "HTML", "CSS", "JS"]
     },
     {
@@ -19,7 +19,7 @@ export function Projects() {
       description: "TMDB client where you can view info about movies and tvseries like their release date, duration and others",
       git_link: "https://github.com/PapaBob31/DMDB",
       live_site: "https://papabob31.github.io/DMDB/",
-      img_link: "./public/images/dmdb.png",
+      img_link: "./images/dmdb.png",
       tools: ["HTML", "CSS", "JS"]
     },
     {
@@ -27,7 +27,7 @@ export function Projects() {
       description: "Web app that generates 20 distinct variations of a color and their corresponding hex code.",
       git_link: "https://github.com/PapaBob31/Color-generator-hex",
       live_site: "https://color-variations.netlify.app/",
-      img_link: "./public/images/colors.png",
+      img_link: "./images/colors.png",
       tools: ["React", "Typescript", "HTML", "CSS", "JS"]
     },
     {
@@ -35,7 +35,7 @@ export function Projects() {
       description: "Landing page for a fictional file storage website. This was completed as a challenge from frontendmentor.io",
       git_link: "https://github.com/PapaBob31/fylo-dark-theme-landing-page",
       live_site: "https://papabob31.github.io/fylo-dark-theme-landing-page/",
-      img_link: "./public/images/fylo.png",
+      img_link: "./images/fylo.png",
       tools: ["HTML", "CSS", "JS"]
     },
   ]
@@ -58,10 +58,10 @@ export function Projects() {
         </ul>
         <div className={"flex mt-4" + (!(index%2 === 1) ? " lg:justify-end": "")}>
           <a href={detail.git_link} aria-label className="inline-block w-6">
-            <img src="./public/icons/github.svg" alt="github icon"/>
+            <img src="./icons/github.svg" alt="github icon"/>
           </a>
           <a href={detail.live_site} aria-label className="inline-block w-6 ml-6">
-            <img src="./public/icons/link.svg" alt="External link icon"/>
+            <img src="./icons/link.svg" alt="External link icon"/>
           </a>
         </div>
       </figcaption>
@@ -108,13 +108,13 @@ export function OtherProjects() {
   return details.map((detail, index) => (
     <article className="bg-zinc-800 p-6 md:w-[45%] md:mr-4 mb-4 hide-stuff" key={index}>
       <div className="flex align-middle justify-between">
-        <img src="./public/icons/folder.svg" alt="folder icon" className="w-10"/>
+        <img src="./icons/folder.svg" alt="folder icon" className="w-10"/>
         <div>
           <a href={detail.git_link} aria-label className="inline-block w-6">
-            <img src="./public/icons/github.svg" alt="github icon"/>
+            <img src="./icons/github.svg" alt="github icon"/>
           </a>
           {detail.live_site && <a href={detail.live_site} aria-label className="inline-block w-6 ml-6">
-            <img src="./public/icons/link.svg" alt="External link icon"/>
+            <img src="./icons/link.svg" alt="External link icon"/>
           </a>}
         </div>
       </div>
