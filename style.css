@@ -612,11 +612,6 @@ video {
   margin-right: auto;
 }
 
-.my-12 {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -627,8 +622,21 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 
 .mb-6 {
@@ -649,6 +657,10 @@ video {
 
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .block {
@@ -757,9 +769,28 @@ video {
   border-width: 1px;
 }
 
+.border-t {
+  border-top-width: 1px;
+}
+
 .border-neutral-800 {
   --tw-border-opacity: 1;
   border-color: rgb(38 38 38 / var(--tw-border-opacity));
+}
+
+.border-t-zinc-200 {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(228 228 231 / var(--tw-border-opacity));
+}
+
+.border-t-zinc-100 {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(244 244 245 / var(--tw-border-opacity));
+}
+
+.border-t-zinc-700 {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(63 63 70 / var(--tw-border-opacity));
 }
 
 .bg-transparent {
@@ -781,8 +812,8 @@ video {
   background-color: rgb(24 24 27 / var(--tw-bg-opacity));
 }
 
-.bg-zinc-900\/70 {
-  background-color: rgb(24 24 27 / 0.7);
+.bg-zinc-900\/50 {
+  background-color: rgb(24 24 27 / 0.5);
 }
 
 .bg-zinc-900\/80 {
@@ -813,6 +844,27 @@ video {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-end {
@@ -847,6 +899,20 @@ video {
   font-weight: 700;
 }
 
+.font-semibold {
+  font-weight: 600;
+}
+
+.text-\[\#d9d9f4\] {
+  --tw-text-opacity: 1;
+  color: rgb(217 217 244 / var(--tw-text-opacity));
+}
+
+.text-\[\#e4e4ff\] {
+  --tw-text-opacity: 1;
+  color: rgb(228 228 255 / var(--tw-text-opacity));
+}
+
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -855,6 +921,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-zinc-200 {
+  --tw-text-opacity: 1;
+  color: rgb(228 228 231 / var(--tw-text-opacity));
 }
 
 .shadow-lg {

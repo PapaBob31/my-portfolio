@@ -4,7 +4,7 @@ export default function Header() {
   const [visibilityClass, setVisibilityClass] = useState("translate-x-full");
   return (
     <header className="flex justify-between text-white w-full px-4">
-      <h1>Adedamola</h1>
+      <h1 className="font-semibold text-xl py-4">Adedamola</h1>
       <nav className="md:min-w-80 md:h-fit md:w-1/3">
         <button className="md:hidden p-1 text-black rounded-lg" onClick={() => setVisibilityClass("translate-x-0")} aria-label="Menu toggle">
         	<img src="icons/Hamburger Menu.svg" alt="Menu icon"/>
@@ -15,10 +15,10 @@ export default function Header() {
             <img src="icons/close.svg" alt="Menu close icon"/>
           </button>
           <ul className="block md:flex justify-between">
-            <li className="mt-12 md:mt-0"><a href="#about-me">About</a></li>
-            <li className="mt-12 md:mt-0"><a href="#experience">Experience</a></li>
-            <li className="mt-12 md:mt-0"><a href="#work">Work</a></li>
-            <li className="mt-12 md:mt-0"><a href="#contact-me">Contact</a></li>
+            <li className="mt-12 md:mt-0"><a href="#about-me" className="text-zinc-200">About</a></li>
+            <li className="mt-12 md:mt-0"><a href="#experience" className="text-zinc-200">Experience</a></li>
+            <li className="mt-12 md:mt-0"><a href="#work" className="text-zinc-200">Work</a></li>
+            <li className="mt-12 md:mt-0"><a href="#contact-me" className="text-zinc-200">Contact</a></li>
           </ul>
         </div>
       </nav>

@@ -41,15 +41,15 @@ export function Projects() {
   ]
 
   return projects_details.map((detail, index) => (
-    <figure className={"w-full relative my-12 lg:flex hide-stuff min-h-72 border lg:border-0 rounded-lg border-neutral-800 shadow-neutral-800 shadow-none shadow-lg "
+    <figure className={"w-full relative mb-12 lg:flex hide-stuff min-h-72 border lg:border-0 rounded-lg border-neutral-800 shadow-neutral-800 shadow-none shadow-lg "
      + (index%2 === 1 ? "justify-end": "")} key={index}>
       <div className="absolute lg:relative lg:w-3/5 w-full h-full">
         <img src={detail.img_link} className="w-full h-full object-cover lg:object-fill rounded-lg lg:rounded-none"/>
-        <div className="hidden lg:block bg-zinc-900/70 absolute w-full h-full top-0 left-0 transition-bg duration-300 hover:bg-transparent"></div>
+        <div className="hidden lg:block bg-zinc-900/50 absolute w-full h-full top-0 left-0 transition-bg duration-300 hover:bg-transparent"></div>
       </div>
       <figcaption className={"absolute w-full top-0 lg:w-1/2 h-full p-3 bg-zinc-900/80 lg:bg-transparent transition-bg duration-300 lg:hover:bg-transparent hover:bg-zinc-900/20 "
        + (index%2 === 1 ? "lg:left-0" : "lg:right-0")}>
-        <h2 className={"text-3xl my-6" + (!(index%2 === 1) ? " lg:text-end": "")}>{detail.title}</h2>
+        <h2 className={"text-3xl my-6 text-white" + (!(index%2 === 1) ? " lg:text-end": "")}>{detail.title}</h2>
         <p className="lg:p-5 rounded-lg lg:bg-zinc-800 mb-6 bg-transparent">{detail.description}</p>
         <ul className={"flex" + (!(index%2 === 1) ? " lg:justify-end": "")} aria-label="Tools used">
           {detail.tools.map((tool, index) => (
@@ -118,7 +118,7 @@ export function OtherProjects() {
           </a>}
         </div>
       </div>
-      <h1 className="text-xl text-bold">{detail.title}</h1>
+      <h1 className="text-xl font-bold text-white">{detail.title}</h1>
       <p>{detail.description}</p>
       <ul className="flex" aria-label="Tools used">
         {detail.tools.map((tool, index) => (
