@@ -8,12 +8,12 @@ function Links() {
   return (
     <ul className="w-4/5 mb-4 md:mb-0 md:w-6 flex md:fixed left-10 bottom-0 md:flex-col justify-between items-center md:min-h-60 md:h-2/5 mx-auto" id="contact-me">
       <li className="w-5 hover:-translate-y-1">
-        <a href="" aria-label="Github Profile link">
+        <a href="https://github.com/PapaBob31" aria-label="Github Profile link">
           <img src="./icons/github.svg" alt="github icon"/>
         </a>
       </li>
       <li className="w-5 hover:-translate-y-1">
-        <a href="" aria-label="Gmail Link">
+        <a href="mailto:egbebitimi121@gmail.com" aria-label="Gmail Link">
           <img src="./icons/email.svg" alt="Email icon"/>
         </a>
       </li>
