@@ -12,17 +12,17 @@ function Links() {
           <img src="./icons/github.svg" alt="github icon"/>
         </a>
       </li>
-      <li className="w-5 hover:-translate-y-1">
+      <li className="w-5 hover:-translate-y-1 duration-200">
         <a href="mailto:egbebitimi121@gmail.com" aria-label="Gmail Link">
           <img src="./icons/email.svg" alt="Email icon"/>
         </a>
       </li>
-      <li className="w-5 hover:-translate-y-1">
+      <li className="w-5 hover:-translate-y-1 duration-200">
         <a href="https://www.twitter.com/PapaBob31" aria-label="Twitter Profile Link">
           <img src="./icons/twitter.svg" alt="twitter icon"/>
         </a>
       </li>
-      <li className="w-5 hover:-translate-y-1">
+      <li className="w-5 hover:-translate-y-1 duration-200">
         <a href="https://github.com/PapaBob31" aria-label="">
           <img src="./icons/linkedin.svg" alt="linkedin icon"/>
         </a>

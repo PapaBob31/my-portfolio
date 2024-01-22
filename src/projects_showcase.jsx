@@ -50,8 +50,8 @@ export function Projects() {
       <figcaption className={"absolute w-full top-0 lg:w-1/2 h-full p-3 bg-zinc-900/80 lg:bg-transparent transition-bg duration-300 lg:hover:bg-transparent hover:bg-zinc-900/20 "
        + (index%2 === 1 ? "lg:left-0" : "lg:right-0")}>
         <h2 className={"text-3xl my-6 text-white" + (!(index%2 === 1) ? " lg:text-end": "")}>{detail.title}</h2>
-        <p className="lg:p-5 rounded-lg lg:bg-zinc-800 mb-6 bg-transparent">{detail.description}</p>
-        <ul className={"flex" + (!(index%2 === 1) ? " lg:justify-end": "")} aria-label="Tools used">
+        <p className="lg:p-5 rounded-lg lg:bg-zinc-800 mb-6 bg-transparent text-[#d9d9f4]">{detail.description}</p>
+        <ul className={"flex text-[#d9d9f4]" + (!(index%2 === 1) ? " lg:justify-end": "")} aria-label="Tools used">
           {detail.tools.map((tool, index) => (
             <li className="mr-4" key={index}>{tool}</li>
           ))}
