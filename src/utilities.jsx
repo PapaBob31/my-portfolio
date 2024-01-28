@@ -1,6 +1,5 @@
 export function showStuff(entries) {
   entries.forEach(entry => {
-    console.log(90)
     if (entry.isIntersecting) {
       entry.target.classList.remove("hide-stuff")
       entry.target.classList.add("show-stuff")
