@@ -118,9 +118,9 @@ export function OtherProjects() {
           </a>}
         </div>
       </div>
-      <h1 className="text-xl font-bold text-white">{detail.title}</h1>
-      <p>{detail.description}</p>
-      <ul className="flex" aria-label="Tools used">
+      <h1 className="text-xl font-bold text-white mt-2">{detail.title}</h1>
+      <p className="mt-2">{detail.description}</p>
+      <ul className="flex mt-2" aria-label="Tools used">
         {detail.tools.map((tool, index) => (
           <li className="mr-4" key={index}>{tool}</li>
         ))}
