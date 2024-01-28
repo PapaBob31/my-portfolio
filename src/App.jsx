@@ -1,4 +1,4 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import Header from "./header.jsx"
 import { Projects, OtherProjects } from "./projects_showcase.jsx"
 import hideStuff from "./utilities.jsx"
@@ -6,7 +6,7 @@ import hideStuff from "./utilities.jsx"
 
 function Links() {
   return (
-    <ul className="w-4/5 mb-4 md:mb-0 md:w-6 flex md:fixed left-10 bottom-0 md:flex-col justify-between items-center md:min-h-60 md:h-2/5 mx-auto" id="contact-me">
+    <ul className="w-4/5 my-6 md:my-0 md:w-6 flex md:fixed left-10 bottom-0 md:flex-col justify-between items-center md:min-h-60 md:h-2/5 mx-auto" id="contact-me">
       <li className="w-5 hover:-translate-y-1">
         <a href="https://github.com/PapaBob31" aria-label="Github Profile link">
           <img src="./icons/github.svg" alt="github icon"/>
@@ -34,11 +34,17 @@ function Links() {
 
 
 export default function Main() {
-  useEffect(hideStuff, [])
+  useEffect(()=>{
+    hideStuff();
+    window.addEventListener("resize", () => window.innerWidth > 767 && setMenuVisibility(false));
+    return () => {};
+  }, [])
+
+  const [menuIsVisible, setMenuVisibility] = useState(false) // toggles menu visibility for small screens (767px and below).
   return (
     <>
-      <Header/>
-      <main className="md:w-3/4 mx-[5%] md:mx-auto md:ps-16">
+      <Header menuIsVisible={menuIsVisible} showMenu={setMenuVisibility}/>
+      <main className={`md:w-3/4 mx-[5%] md:mx-auto md:ps-16 ${menuIsVisible ? "blur-sm" : ""}`}>
         <section className="md:w-3/5 w-4/5">
           <p className="my-6 hide-stuff text-white" id="about-me">Hi, my name is</p>
           <h1 className="text-5xl md:text-6xl font-bold my-6 hide-stuff text-white">Adedamola Egbebi</h1>
