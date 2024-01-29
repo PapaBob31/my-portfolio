@@ -54,6 +54,9 @@ export default function Main() {
             I have hands on experience using web technologies like React, typescript, vanilla javascript, tailwindcss to name a few.
             I'm also very familiar with the python programming language.
           </p>
+          <button className="hide-stuff border text-xl font-semibold border-white rounded-lg p-3 text-white hover:text-black hover:bg-white duration-200">
+            <a href="/My Resume.docx" download>My Resume</a>
+          </button>
           <p className="my-2 hide-stuff" id="experience">Here are a few technologies I’m quite familiar with:</p>
           <ul className="flex flex-wrap w-3/4 justify-between hide-stuff">
             <li className="w-1/2 text-white">JavaScript (ES6+)</li>
@@ -63,7 +66,6 @@ export default function Main() {
             <li className="w-1/2 text-white">Sass</li>
             <li className="w-1/2 text-white">Python</li>
           </ul>
-          {/*<button className="hide-stuff">Here's my Resume</button>*/}
         </section>
         <section id="work">
           <h1 className="font-bold text-3xl text-white pt-3 my-5 border-t border-t-zinc-700 hide-stuff">Some Projects I’ve Built</h1>
