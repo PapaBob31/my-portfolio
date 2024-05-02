@@ -7,12 +7,12 @@ export function Projects() {
 
   const projects_details = [
     {
-      title: "2048 Game",
-      description: "Recreation of the 2048 game built with react and typescript",
-      git_link: "https://github.com/PapaBob31/2048-game",
-      live_site: "https://2o48-game.netlify.app/",
-      img_link: "./images/2048.png",
-      tools: ["React", "Typescript", "HTML", "CSS", "JS"]
+      title: "Quiz4U",
+      description: "Multiple Choice quiz website Where users can create and play quizzes. It also has Authentication and Authorization services for users.",
+      git_link: "https://github.com/PapaBob31/Nextjs-quiz-app",
+      live_site: "https://nextjs-quiz-app-blue.vercel.app/",
+      img_link: "./images/quiz4u.png",
+      tools: ["React", "Typescript", "Next.js", "TailwindCSS", "PostgreSql"]
     },
     {
       title: "DMDB",
@@ -28,7 +28,7 @@ export function Projects() {
       git_link: "https://github.com/PapaBob31/Color-generator-hex",
       live_site: "https://color-variations.netlify.app/",
       img_link: "./images/colors.png",
-      tools: ["React", "Typescript", "HTML", "CSS", "JS"]
+      tools: ["React", "HTML", "CSS", "JS"]
     },
     {
       title: "Fylo",
@@ -69,7 +69,6 @@ export function Projects() {
   ))
 }
 
- // rgba(24, 24, 27, 0.1);
 
 export function OtherProjects() {
   useEffect(hideStuff, [])
@@ -90,11 +89,11 @@ export function OtherProjects() {
       git_link: "https://github.com/PapaBob31/sunnyside-frontendmentor",
     },
     {
-      title: "Ping Pong Game",
-      description: "I built the classic ping pong video game in python with the pygame library.",
-      tools: ["Python", "Pygame library"],
-      live_site: null,
-      git_link: "https://github.com/PapaBob31/pingpong_again",
+      title: "2048 Game",
+      description: "I recreated the 2048 game with the React library and Typescript.",
+      tools: ["React", "Typescript"],
+      live_site: "https://2o48-game.netlify.app/",
+      git_link: "https://github.com/PapaBob31/2048-game",
     },
     {
       title: "Side Scroller Game",
