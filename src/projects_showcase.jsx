@@ -8,7 +8,7 @@ export function Projects() {
   const projects_details = [
     {
       title: "Quiz4U",
-      description: "Multiple Choice quiz website Where users can create and play quizzes. It also has Authentication and Authorization services for users.",
+      description: "Multiple Choice quiz website Where users can create and play quizzes. Equiped with Authorisation and Authentication",
       git_link: "https://github.com/PapaBob31/Nextjs-quiz-app",
       live_site: "https://nextjs-quiz-app-blue.vercel.app/",
       img_link: "./images/quiz4u.png",
@@ -51,7 +51,7 @@ export function Projects() {
        + (index%2 === 1 ? "lg:left-0" : "lg:right-0")}>
         <h2 className={"text-3xl my-6 text-white" + (!(index%2 === 1) ? " lg:text-end": "")}>{detail.title}</h2>
         <p className="lg:p-5 rounded-lg lg:bg-zinc-800 mb-6 bg-transparent text-[#d9d9f4]">{detail.description}</p>
-        <ul className={"flex text-[#d9d9f4]" + (!(index%2 === 1) ? " lg:justify-end": "")} aria-label="Tools used">
+        <ul className={"flex text-[#d9d9f4] flex-wrap" + (!(index%2 === 1) ? " lg:justify-end": "")} aria-label="Tools used">
           {detail.tools.map((tool, index) => (
             <li className="mr-4" key={index}>{tool}</li>
           ))}
