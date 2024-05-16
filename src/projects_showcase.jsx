@@ -96,11 +96,11 @@ export function OtherProjects() {
       git_link: "https://github.com/PapaBob31/2048-game",
     },
     {
-      title: "Side Scroller Game",
-      description: "A basic endless Sidescroller game written in python with the pygame library.",
-      tools: ["Python", "Pygame library"],
-      live_site: null,
-      git_link: "https://github.com/PapaBob31/side-scroller-game",
+      title: "Wordle",
+      description: "Created a clone of the popular new york time's game - wordle.",
+      tools: ["HTML", "CSS", "JS"],
+      live_site: "https://papabob31.github.io/wordle-clone/",
+      git_link: "https://github.com/PapaBob31/wordle-clone",
     }
   ]
 
