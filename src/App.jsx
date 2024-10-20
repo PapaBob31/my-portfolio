@@ -48,22 +48,26 @@ export default function Main() {
         <section className="md:w-3/5 w-4/5">
           <p className="my-6 hide-stuff text-white" id="about-me">Hi, my name is</p>
           <h1 className="text-5xl md:text-6xl font-bold my-6 hide-stuff text-white">Adedamola Egbebi</h1>
-          <h2 className="text-4xl md:text-5xl font-bold my-6 hide-stuff text-[#e4e4ff]">Front End Web Developer</h2>
+          <h2 className="text-4xl md:text-5xl font-bold my-6 hide-stuff text-[#e4e4ff]">Full Stack Web Developer</h2>
           <p className="my-6 hide-stuff">
             I specialize in building modern, intuitive, accessible, scalable and user friendly websites.
-            I have hands on experience using web technologies like React, typescript, vanilla javascript, tailwindcss to name a few.
+            I have hands on experience using web development tools and software like React, typescript, vanilla js, tailwindcss, expressjs, mongodb to name a few.
             I'm also very familiar with the python programming language.
           </p>
           <button className="hide-stuff border text-xl font-semibold border-white rounded-lg p-3 text-white hover:text-black hover:bg-white duration-200">
             <a href="/My Resume.docx" download>My Resume</a>
           </button>
-          <p className="my-2 hide-stuff" id="experience">Here are a few technologies I’m quite familiar with:</p>
+          <p className="my-2 hide-stuff" id="experience">Here are a few of the technologies I’m quite familiar with:</p>
           <ul className="flex flex-wrap w-3/4 justify-between hide-stuff">
             <li className="w-1/2 text-white">JavaScript (ES6+)</li>
             <li className="w-1/2 text-white">TypeScript</li>
             <li className="w-1/2 text-white">React</li>
+            <li className="w-1/2 text-white">NextJs</li>
             <li className="w-1/2 text-white">Tailwindcss</li>
-            <li className="w-1/2 text-white">Sass</li>
+            <li className="w-1/2 text-white">ExpressJs</li>
+            <li className="w-1/2 text-white">Mongodb</li>
+            <li className="w-1/2 text-white">Postgresql</li>
+            <li className="w-1/2 text-white">Vitest</li>
             <li className="w-1/2 text-white">Python</li>
           </ul>
         </section>

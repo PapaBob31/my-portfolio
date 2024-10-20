@@ -22,13 +22,13 @@ export function Projects() {
       img_link: "./images/dmdb.png",
       tools: ["HTML", "CSS", "JS"]
     },
-    {
-      title: "Color Generator",
-      description: "Web app that generates 20 distinct variations of a color and their corresponding hex code.",
-      git_link: "https://github.com/PapaBob31/Color-generator-hex",
-      live_site: "https://color-variations.netlify.app/",
-      img_link: "./images/colors.png",
-      tools: ["React", "HTML", "CSS", "JS"]
+     {
+      title: "2048 Game",
+      description: "Recreation of the 2048 game with the React library and Typescript.",
+      live_site: "https://2o48-game.netlify.app/",
+      img_link: "./images/2048.png",
+      git_link: "https://github.com/PapaBob31/2048-game",
+      tools: ["React", "Typescript", "CSS", "JS"],
     },
     {
       title: "Fylo",
@@ -82,18 +82,18 @@ export function OtherProjects() {
       git_link: "https://github.com/PapaBob31/Bob-s-Bakery-landing-page",
     },
     {
+      title: "Color Generator",
+      description: "Color palette generator for the variations of a specified css color",
+      git_link: "https://github.com/PapaBob31/Color-generator-hex",
+      live_site: "https://color-variations.netlify.app/",
+      tools: ["React", "HTML", "CSS", "JS"]
+    },
+    {
       title: "Sunny Side agency landing page",
       description:  "This was built as a solution to a frontend mentor challenge",
       tools: ["HTML", "CSS", "SASS", "JS"],
       live_site: "https://papabob31.github.io/sunnyside-frontendmentor/",
       git_link: "https://github.com/PapaBob31/sunnyside-frontendmentor",
-    },
-    {
-      title: "2048 Game",
-      description: "I recreated the 2048 game with the React library and Typescript.",
-      tools: ["React", "Typescript"],
-      live_site: "https://2o48-game.netlify.app/",
-      git_link: "https://github.com/PapaBob31/2048-game",
     },
     {
       title: "Wordle",
