@@ -6,7 +6,7 @@ export default function Header({menuIsVisible, showMenu}) {
   return (
     <>
       <div className={`md:hidden block fixed top-0 left-0 w-full h-full z-10 ${menuIsVisible ? "block" : "hidden"}`} onClick={() => showMenu(false)}></div>
-      <header className="flex justify-between text-white w-full px-4">
+      <header className="flex justify-between text-white w-full px-4 sticky top-0 z-10 border-b border-b-zinc-700 bg-zinc-900">
         <h1 className={`font-semibold text-xl py-4 ${menuIsVisible ? "blur-sm" : ""}`}>Adedamola</h1>
         <nav className="md:min-w-80 md:h-fit md:w-1/3">
           <button className="md:hidden py-4 text-black rounded-lg" onClick={() => showMenu(true)} aria-label="Menu toggle">

@@ -7,6 +7,14 @@ export function Projects() {
 
   const projects_details = [
     {
+      title: "File Vault",
+      description: "Cloud file storage platform where you can securely store, share and manage your files among other things",
+      live_site: "https://file-hub-backend.onrender.com/",
+      img_link: "./images/file-vault.png",
+      git_link: undefined,
+      tools: ["React", "Typescript", "React-Router", "TailwindCSS", "MongoDb", "ExpressJs"]
+    },
+    {
       title: "Quiz4U",
       description: "Multiple Choice quiz website Where users can create and play quizzes. Equiped with Authorisation and Authentication",
       git_link: "https://github.com/PapaBob31/Nextjs-quiz-app",
@@ -57,10 +65,10 @@ export function Projects() {
           ))}
         </ul>
         <div className={"flex mt-4" + (!(index%2 === 1) ? " lg:justify-end": "")}>
-          <a href={detail.git_link} aria-label className="lg:text-white text-gray-400 inline-block w-6">
+          <a target="_blank" href={detail.git_link} aria-label className="lg:text-white text-gray-400 inline-block w-6">
             <img src="./icons/github.svg" alt="github icon"/>
           </a>
-          <a href={detail.live_site} aria-label className="lg:text-white text-gray-400 inline-block w-6 ml-6">
+          <a target="_blank" href={detail.live_site} aria-label className="lg:text-white text-gray-400 inline-block w-6 ml-6">
             <img src="./icons/link.svg" alt="External link icon"/>
           </a>
         </div>
@@ -75,11 +83,11 @@ export function OtherProjects() {
 
   const details = [
     {
-      title: "Bob's Bakery",
-      description:  "Built a responsive landing Page for a fictional bakery.",
-      tools: ["HTML", "CSS", "JS"],
-      live_site: "https://papabob31.github.io/Bob-s-Bakery-landing-page/",
-      git_link: "https://github.com/PapaBob31/Bob-s-Bakery-landing-page",
+      title: "Markdown parser",
+      description:  "Built a markdown parsing library that conforms to the github flavoured markdown spec.",
+      tools: ["Typesript", "Vitest", "Javascript"],
+      live_site: "https://github.com/PapaBob31/markdown-parser",
+      git_link: "https://github.com/PapaBob31/markdown-parser",
     },
     {
       title: "Color Generator",
@@ -89,18 +97,18 @@ export function OtherProjects() {
       tools: ["React", "HTML", "CSS", "JS"]
     },
     {
-      title: "Sunny Side agency landing page",
-      description:  "This was built as a solution to a frontend mentor challenge",
-      tools: ["HTML", "CSS", "SASS", "JS"],
-      live_site: "https://papabob31.github.io/sunnyside-frontendmentor/",
-      git_link: "https://github.com/PapaBob31/sunnyside-frontendmentor",
-    },
-    {
       title: "Wordle",
       description: "Created a clone of the popular new york time's game - wordle.",
       tools: ["HTML", "CSS", "JS"],
       live_site: "https://papabob31.github.io/wordle-clone/",
       git_link: "https://github.com/PapaBob31/wordle-clone",
+    },
+    {
+      title: "Sunny Side agency landing page",
+      description:  "This was built as a solution to a frontend mentor challenge",
+      tools: ["HTML", "CSS", "SASS", "JS"],
+      live_site: "https://papabob31.github.io/sunnyside-frontendmentor/",
+      git_link: "https://github.com/PapaBob31/sunnyside-frontendmentor",
     }
   ]
 
@@ -109,10 +117,10 @@ export function OtherProjects() {
       <div className="flex align-middle justify-between">
         <img src="./icons/folder.svg" alt="folder icon" className="w-10"/>
         <div>
-          <a href={detail.git_link} aria-label className="inline-block w-6">
+          <a target="_blank" href={detail.git_link} aria-label className="inline-block w-6">
             <img src="./icons/github.svg" alt="github icon"/>
           </a>
-          {detail.live_site && <a href={detail.live_site} aria-label className="inline-block w-6 ml-6">
+          {detail.live_site && <a target="_blank" href={detail.live_site} aria-label className="inline-block w-6 ml-6">
             <img src="./icons/link.svg" alt="External link icon"/>
           </a>}
         </div>
