@@ -25,7 +25,7 @@ function Links() {
           </a>
         </li>
         <li className="hover:-translate-y-1 duration-200">
-          <a target="_blank" href="https://github.com/PapaBob31" aria-label="Linkedin Icon">
+          <a target="_blank" href="https://www.linkedin.com/in/adedamola-egbebi-3380442a1/" aria-label="Linkedin Icon">
             <img src="./icons/linkedin.svg" alt="linkedin icon" className="w-8"/>
           </a>
         </li>
