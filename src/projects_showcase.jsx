@@ -83,18 +83,18 @@ export function OtherProjects() {
 
   const details = [
     {
-      title: "Markdown parser",
-      description:  "Built a markdown parsing library that conforms to the github flavoured markdown spec.",
-      tools: ["Typesript", "Vitest", "Javascript"],
-      live_site: "https://github.com/PapaBob31/markdown-parser",
-      git_link: "https://github.com/PapaBob31/markdown-parser",
+      title: "Bizease",
+      description: "Business management website for small and medium enterprise",
+      git_link: "https://github.com/Techies-Collab-and-Upskill-Live-Project/bizease-web-backend",
+      live_site: "http://adedamola.pythonanywhere.com/v1/api-docs/",
+      tools: ["Python", "Django", "JWT", "Oauth"]
     },
     {
-      title: "Color Generator",
-      description: "Color palette generator for the variations of a specified css color",
-      git_link: "https://github.com/PapaBob31/Color-generator-hex",
-      live_site: "https://color-variations.netlify.app/",
-      tools: ["React", "HTML", "CSS", "JS"]
+      title: "Markdown parser",
+      description:  "Markdown parsing library that conforms to the github flavoured markdown spec.",
+      tools: ["Typescript", "Vitest", "NodeJs"],
+      live_site: "https://github.com/PapaBob31/markdown-parser",
+      git_link: "https://github.com/PapaBob31/markdown-parser",
     },
     {
       title: "Wordle",
