@@ -9,7 +9,7 @@ export function Projects() {
     {
       title: "File Vault",
       description: "Cloud file storage platform where you can securely store, share and manage your files among other things",
-      live_site: "https://file-hub-backend.onrender.com/",
+      live_site: "https://file-hub-frontend.vercel.app/",
       img_link: "./images/file-vault.png",
       git_link: undefined,
       tools: ["React", "Typescript", "React-Router", "TailwindCSS", "MongoDb", "ExpressJs"]
