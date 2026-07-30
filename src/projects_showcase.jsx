@@ -86,7 +86,7 @@ export function OtherProjects() {
       title: "Bizease",
       description: "Business management website for small and medium enterprise",
       git_link: "https://github.com/Techies-Collab-and-Upskill-Live-Project/bizease-web-backend",
-      live_site: "http://adedamola.pythonanywhere.com/v1/api-docs/",
+      live_site: "https://bizease-frontend-beta.vercel.app/",
       tools: ["Python", "Django", "JWT", "Oauth"]
     },
     {
